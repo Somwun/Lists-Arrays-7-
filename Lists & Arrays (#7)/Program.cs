@@ -10,7 +10,7 @@ namespace Lists___Arrays___7_
             int userChoice = 2, userAdd, userRemove, userCount, userCountAmount = 0;
             List<int> randomNumbers = new List<int>();
             Random generator = new Random();
-            bool repeat = true, count = true;
+            bool repeat = true;
             while (repeat)
             {
                 if (userChoice == 2)
@@ -30,6 +30,13 @@ namespace Lists___Arrays___7_
                 }
                 switch (userChoice)
                 {
+                    /* For copy pasting
+for (int i = 0; i < randomNumbers.Count(); i ++)
+                        {
+                            Console.Write(randomNumbers[i] + " ");
+                        }
+                    */
+
                     case 1:
                         Console.Clear();
                         randomNumbers.Sort();
@@ -114,19 +121,23 @@ namespace Lists___Arrays___7_
                         }
                         break;
                     case 6:
-
+                        Console.Clear();
+                        Console.WriteLine($"The largest number in the list is {randomNumbers.Max()}\n(Press enter to continue)");
+                        Console.ReadLine();
                         break;
                     case 7:
-
+                        Console.Clear();
+                        Console.WriteLine($"The smallest number in the list is {randomNumbers.Min()}\n(Press enter to continue)");
+                        Console.ReadLine();
                         break;
                     case 8:
-
+                        //Average the numbers
                         break;
                     case 9:
-
+                        //Find the most occuring value
                         break;
                     case 10:
-
+                        repeat = false;
                         break;
                 }
             }
