@@ -40,6 +40,7 @@ namespace Lists___Arrays___7_
                         }
                         break;
                     case 3:
+                        Console.Clear();
                         Console.WriteLine("\nPick a number to remove");
                         while (!int.TryParse(Console.ReadLine(), out userRemove) || !randomNumbers.Contains(userRemove))
                         {
